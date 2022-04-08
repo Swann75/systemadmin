@@ -1,10 +1,10 @@
-from systemadmin.Files import File
+from src.systemadmin.Files import File
 from configparser import ConfigParser
-from utils.utils import Root
+from src.utils.utils import Root
 import os
 
 
-def test_typeOfFile():
+def test_typeofFile():
 
     config = ConfigParser()
     config.read(os.path.join(Root.get_project_root(), "configfile.properties"))
